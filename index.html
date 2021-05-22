@@ -116,21 +116,32 @@
           </p>
           <p>
             <label for="adults">Взрослые</label>
-            <input id="adults" type="text" name="adults" value="2" required />
-            <a href="#"></a>
-            <a href="#"></a>
+            <input
+              id="adults"
+              type="number"
+              name="adults"
+              value="2"
+              min="1"
+              max="10"
+              step="1"
+              required
+            />
+            <button type="button">+</button>
           </p>
           <p>
             <label for="children">Дети</label>
+            <button type="button">-</button>
             <input
               id="children"
-              type="text"
+              type="number"
               name="children"
               value="0"
+              min="0"
+              max="10"
+              step="1"
               required
             />
-            <a href="#"></a>
-            <a href="#"></a>
+            <button type="button">+</button>
           </p>
           <button type="submit">найти</button>
         </form>
@@ -165,4 +176,3 @@
     </footer>
   </body>
 </html>
-
