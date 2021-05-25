@@ -1,164 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Седона</title>
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <a>
-          <img src="https://via.placeholder.com/150x100" alt="логотип Седона" />
-        </a>
-        <ul>
-          <li><a href="#">информация</a></li>
-          <li><a href="#">фото и видео</a></li>
-          <li><a href="#">карта штата</a></li>
-          <li><a href="catalog.html">гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <img
-        src="https://via.placeholder.com/150x100"
-        alt="Wellcome
-        to the gorgeouse Sedona Because the Grand Canyon sucks!"
-      />
-      <h1>Cедона — небольшой городок в аризоне, заслуживающий большего!</h1>
-      <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
-      <section>
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
-            <h3>Настоящий городок</h3>
-            <p>№1</p>
-            <p>Седона-не атракцион для туристов, там течёт своя жизнь</p>
-            <img src="https://via.placeholder.com/150x100" alt="фото города" />
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/150x100" alt="жилье" />
-            <h3>жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/150x100" alt="еда" />
-            <h3>еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/150x100" alt="сувениры" />
-            <h3>сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-          <li>
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
-            <img src="https://via.placeholder.com/150x100" alt="фото города" />
-          </li>
-          <li>
-            <h3>небольшая площадь</h3>
-            <p>№3</p>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3>красивая дорога</h3>
-            <p>№4</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li>
-            <h3>мало туристов</h3>
-            <p>№5</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>заинтересовались?</h2>
-        <p>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в седоне
-        </p>
-        <a href="#">Поиск гостиницы в Седоне</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <ul>
-            <li>
-              <label for="arrival-date">Дата заезда</label>
-              <input
-                id="arrival-date"
-                type="text"
-                name="date"
-                placeholder="24 апреля 2017"
-                required
-              />
-            </li>
-            <li>
-              <label for="departure-date">Дата выезда</label>
-              <input
-                id="departure-date"
-                type="text"
-                name="departure-date"
-                placeholder="4 июля 2017"
-                required
-              />
-            </li>
-            <li>
-              <label for="adults">Взрослые</label>
-              <button type="button">-</button>
-              <input
-                id="adults"
-                type="number"
-                name="adults"
-                value="2"
-                min="1"
-                max="10"
-                step="1"
-                required
-              />
-              <button type="button">+</button>
-            </li>
-            <li>
-              <label for="children">Дети</label>
-              <button type="button">-</button>
-              <input
-                id="children"
-                type="number"
-                name="children"
-                value="0"
-                min="0"
-                max="10"
-                step="1"
-                required
-              />
-              <button type="button">+</button>
-            </li>
-          </ul>
-          <button type="submit">найти</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <h2>Как нас найти</h2>
+<head>
+  <meta charset="UTF-8" />
+  <title>Седона</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">информация</a></li>
+        <li><a href="#">фото и видео</a></li>
+        <li><a href="#">карта штата</a></li>
+        <li><a href="catalog.html">гостиницы</a></li>
+      </ul>
+      <img src="img/logo.png" width="138" height="70" alt="логотип Седона" />
+    </nav>
+  </header>
+  <main>
+    <img src="img/background-photo.jpg" width="1200" height="509" alt="Wellcome
+        to the gorgeouse Sedona Because the Grand Canyon sucks!" />
+    <h1>Cедона — небольшой городок в аризоне, заслуживающий большего!</h1>
+    <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
+    <section>
+      <h2>Преимущества</h2>
       <ul>
         <li>
-          <p>#visitsedona</p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <h3>Настоящий городок</h3>
+          <p>№1</p>
+          <p>Седона-не атракцион для туристов, там течёт своя жизнь</p>
+          <img src="img/image1.jpg" width="800" height="256" alt="фото города" />
         </li>
         <li>
-          <a href="#">Вконтакте</a>
+          <img src="img/icon-1.svg" width="75" height="72" alt="жилье" />
+          <h3>жильё</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <img src="img/icon-3.svg" width="75" height="70" alt="еда" />
+          <h3>еда</h3>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
-          <a href="#">Ютуб</a>
+          <img src="img/icon-2.svg" width="64" height="77" alt="сувениры" />
+          <h3>сувениры</h3>
+          <p>Не только китайского, но и местного производства!</p>
+        </li>
+        <li>
+          <h3>Там есть мост дьявола</h3>
+          <p>№2</p>
+          <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
+          <img src="img/image2.jpg" width="800" height="256" alt="фото города" />
+        </li>
+        <li>
+          <h3>небольшая площадь</h3>
+          <p>№3</p>
+          <p>все достопримечательности находятся очень близко</p>
+        </li>
+        <li>
+          <h3>красивая дорога</h3>
+          <p>№4</p>
+          <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+        </li>
+        <li>
+          <h3>мало туристов</h3>
+          <p>№5</p>
+          <p>большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
-      <div>
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru">.htmlacademy</a>
-      </div>
-    </footer>
-  </body>
+    </section>
+    <section>
+      <h2>заинтересовались?</h2>
+      <p>
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        предложения гостиниц в седоне
+      </p>
+      <a href="#">Поиск гостиницы в Седоне</a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <ul>
+          <li>
+            <label for="arrival-date">Дата заезда</label>
+            <input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017" required />
+          </li>
+          <li>
+            <label for="departure-date">Дата выезда</label>
+            <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017" required />
+          </li>
+          <li>
+            <label for="adults">Взрослые</label>
+            <button type="button">-</button>
+            <input id="adults" type="number" name="adults" value="2" min="1" max="10" step="1" required />
+            <button type="button">+</button>
+          </li>
+          <li>
+            <label for="children">Дети</label>
+            <button type="button">-</button>
+            <input id="children" type="number" name="children" value="0" min="0" max="10" step="1" required />
+            <button type="button">+</button>
+          </li>
+        </ul>
+        <button type="submit">найти</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h2>Как нас найти</h2>
+      <img src="img/map.png" width="1199" height="594" alt="карта" />
+      <p>
+        #visitsedona<br>
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </p>
+    </div>
+    <h2>соцсети</h2>
+    <ul>
+      <li>
+        <img src="img/twitter.svg" width="46" height="48" alt="твиттер" />
+        <a href="#">Твиттер</a>
+      </li>
+      <li>
+        <img src="img/fb-icon.svg" width="46" height="48" alt="Фейсбук" />
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <img src="img/youtube.svg" width="46" height="48" alt="Ютуб" />
+        <a href="#">Ютуб</a>
+      </li>
+    </ul>
+    <div>
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru">.htmlacademy</a>
+    </div>
+  </footer>
+</body>
 </html>
