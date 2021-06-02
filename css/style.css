@@ -16,6 +16,11 @@
     --special-brown-active: #503E33;
     --special-brown-hover: #604E43;
     --special-grey-hover: #EBEBEB;
+    --special-brown: #666666;
+    --special-brown-check: #6A6A6A;
+    --special-white: rgba(255, 255, 255, 0.3);
+    --special-black: rgba(0, 0, 0, 0.3);
+    --special-shadow: rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -71,7 +76,7 @@ img {
 .site-navigation a:active {
     color: var(--basic-black);
     opacity: 0.3;
-    text-shadow: rgba(0, 0, 0, 0.25)
+    text-shadow: var(--special-shadow);
 }
 
 .container-title {
@@ -112,7 +117,7 @@ img {
     background-color: var(--basic-blue);
 }
 
-feature-item-block-2 {
+.feature-item-block-2 {
     background-color: var(--basic-super-grey);
 }
 
@@ -151,12 +156,6 @@ feature-item-block-2 {
 .offer:active {
     background: var(--special-brown-active);
     color: rgba(255, 255, 255, 1);
-}
-
-.modal {
-    width: 568px;
-    height: 395px;
-    background: var(--basic-white);
 }
 
 .appointment-list {
@@ -255,18 +254,33 @@ feature-item-block-2 {
     background: var(--basic-white);
 }
 
+
+/*footer*/
+
 .footer-contacts p {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
 }
 
+.insta {
+    color: var(--basic-black);
+}
+
 .footer-phone {
     color: inherit;
 }
 
-.button-copyright {
-    color: var(--basic-black);
+.copyright {
+    fill: var(--basic-black);
+}
+
+.copyright:hover {
+    fill: var(--basic-blue);
+}
+
+.copyright:active {
+    fill: var(--special-grey);
 }
 
 .footer-social {
@@ -305,13 +319,91 @@ feature-item-block-2 {
     line-height: 21px;
 }
 
-.filter-list {
+.filter-list,
+selection-list,
+.filter-price,
+.show-btn,
+.selection-item,
+.ratio,
+.selection-more,
+.selection-reservation {
     font-size: 14px;
     line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.services {
+    display: inline-block;
+    vertical-align: top;
+    padding: 27px 10px 30px;
+    padding-left: 26px;
+}
+
+.check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check label {
+    position: relative;
+    margin-left: 40px;
+}
+
+.check:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.check label::before {
+    content: url(../img/checkbox-off.svg);
+    position: absolute;
+    left: -40px;
+    font-size: 26px;
+}
+
+.check-input:checked+label::before {
+    content: url(../img/checkbox-on.svg);
+}
+
+.check-input:disabled+label {
+    color: var(--special-brown-check);
 }
 
 .services {
     border: none;
+}
+
+.input-price-min,
+.input-price-max,
+.show-btn {
+    background: url(../img/background-catalog.jpg);
+}
+
+.range-controls {
+    color: var(--basic-white);
+}
+
+.show-btn {
+    border: 2px solid var(--basic-white);
+}
+
+.show-btn:hover {
+    color: var(--basic-black);
+    background: var(--basic-white);
+}
+
+.ratio {
+    color: var(--special-brown);
+    width: 110px;
+    height: 27px;
+    padding: 3px 13px;
+    margin-right: 72px;
+    background: var(--basic-extra-grey);
+}
+
+.star {
+    background-image: var(--basic-blue);
 }
 
 .search-heading,
@@ -323,7 +415,98 @@ feature-item-block-2 {
     color: var(--basic-black);
 }
 
-.search-sorting {
+.selection-item {
+    color: var(--basic-grey);
+}
+
+.search-sorting,
+.options {
     font-size: 12px;
     line-height: 18px;
+}
+
+.options-price {
+    color: var(--basic-blue);
+}
+
+.options-type,
+.options-rating {
+    color: var(--special-black);
+    text-decoration: underline;
+}
+
+.options-price:hover,
+.options-type:hover,
+.options-rating:hover {
+    color: var(--basic-blue);
+    text-decoration: underline;
+}
+
+.options-price:active,
+.options-type:active,
+.options-rating:active {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+.icon-up-dir {
+    fill: var(--basic-light-grey);
+}
+
+.icon-down-dir {
+    fill: var(--basic-blue);
+}
+
+.icon-up-dir:hover,
+.icon-down-dir:hover {
+    fill: var(--basic-black);
+}
+
+.icon-up-dir:active,
+.icon-down-dir:active {
+    fill: var(--basic-blue);
+}
+
+.selection-more,
+.selection-reservation {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--basic-white);
+    padding: 3px 17px;
+}
+
+.selection-more {
+    background: var(--basic-blue);
+}
+
+.selection-more:hover {
+    background: var(--special-blue-hover);
+}
+
+.selection-more:active {
+    background: var(--special-blue-active);
+    color: var(--special-white);
+}
+
+.selection-reservation {
+    background: var(--basic-brown);
+}
+
+.selection-reservation:hover {
+    background: var(--special-brown-hover);
+}
+
+.selection-reservation:active {
+    background: var(--special-brown-active);
+    color: var(--special-white);
+}
+
+.selection-title:hover {
+    color: var(--basic-blue);
+}
+
+.selection-title:active {
+    color: var(--special-black);
 }
