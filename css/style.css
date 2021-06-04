@@ -319,14 +319,10 @@ img {
     line-height: 21px;
 }
 
-.filter-list,
-selection-list,
-.filter-price,
+.filter,
 .show-btn,
 .selection-item,
-.ratio,
-.selection-more,
-.selection-reservation {
+.ratio {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -340,6 +336,11 @@ selection-list,
     padding-left: 26px;
 }
 
+.filter {
+    list-style-type: none;
+    padding: 0;
+}
+
 .check-input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -348,26 +349,26 @@ selection-list,
 
 .check label {
     position: relative;
-    margin-left: 40px;
+    padding-left: 40px;
+    ;
 }
 
 .check:not(:last-child) {
     margin-bottom: 25px;
 }
 
-.check label::before {
-    content: url(../img/checkbox-off.svg);
+.infrastructure {
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
     position: absolute;
-    left: -40px;
-    font-size: 26px;
 }
 
-.check-input:checked+label::before {
-    content: url(../img/checkbox-on.svg);
-}
-
-.check-input:disabled+label {
-    color: var(--special-brown-check);
+.check-input:checked+label .infrastructure {
+    background-image: url(../img/checkbox-on.svg);
 }
 
 .services {
@@ -475,6 +476,7 @@ selection-list,
     font-weight: 700;
     color: var(--basic-white);
     padding: 3px 17px;
+    text-transform: uppercase;
 }
 
 .selection-more {
