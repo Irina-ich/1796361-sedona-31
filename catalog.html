@@ -24,6 +24,7 @@
                 </a>
 
             </div>
+
         </nav>
     </header>
     <main class="container">
@@ -56,7 +57,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="services">
+                <fieldset class="services house">
                     <legend class="filter-title">Тип жилья:</legend>
                     <ul class="filter">
                         <li class="check">
@@ -84,42 +85,49 @@
                 </fieldset>
                 <div class="filter-price">
                     <h2 class="filter-title">Стоимость в сутки (Р):</h2>
-                    <input class="input-price-min" type="text" value="ОТ 0" />
-                    <input class="input-price-max" type="text" value="ДО 30000" />
-                </div>
-                <div class="range">
-                    <input class="range-controls" type="range" id="filter-price" name="price" min="1" max="30000" step="1" />
+                    <div class="input-price-holder">
+                        <input class="input-price-min" type="text" value="ОТ 0" />
+                        <input class="input-price-max" type="text" value="ДО 30000" />
+                    </div>
+                    <div class="range-controls"></div>
+                    <button class="show-btn" type="submit">Показать</button>
                 </div>
 
-                <button class="show-btn" type="submit">Показать</button>
+
+
             </form>
         </section>
         <section class="search">
-            <h3 class="search-heading">Найдено: 3</h3>
-            <span class="search-sorting">Сортировка:</span>
-            <ul class="options">
-                <li><a class="options-price">по цене</a></li>
-                <li><a class="options-type" href="#">по типу</a></li>
-                <li><a class="options-rating" href="#">по рейтингу</a></li>
-            </ul>
-            <a href="#"><svg class="icon-up-dir" width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="sorting-options">
+                <h3 class="search-heading">Найдено: 3</h3>
+                <span class="search-sorting">Сортировка:</span>
+                <ul class="options">
+                    <li><a class="options-price">по цене</a></li>
+                    <li><a class="options-type" href="#">по типу</a></li>
+                    <li><a class="options-rating" href="#">по рейтингу</a></li>
+                </ul>
+
+                <a href="#"><svg class="icon-up-dir" width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" />
               </svg>
             </a>
-            <a href="#">
-                <svg class="icon-down-dir " width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#">
+                    <svg class="icon-down-dir " width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" />
               </svg>
-            </a>
+                </a>
+            </div>
             <ul class="results">
                 <li>
                     <img src="img/image3.jpg" width="135" height="90" alt="Amara resort & spa" />
                     <div class="results-hotel">
                         <a class="selection-title" href="#">Amara resort & spa</a>
-                        <p class="selection-item">Гостиница</p>
-                        <p class="selection-item">от 4000 р</p>
-                        <button type="button" class="selection-more button">Подробнее</button>
-                        <button type="button" class="selection-reservation button">Забронировать</button>
+                        <div class="search-hotel">
+                            <p class="selection-item">Гостиница</p>
+                            <p class="selection-item">от 4000 р</p>
+                            <button type="button" class="selection-more">Подробнее</button>
+                            <button type="button" class="selection-reservation">Забронировать</button>
+                        </div>
                     </div>
                     <div class="star-rating">
                         <p><img src="img/star.svg" width="18" height="17" alt="Звёздочка" />
@@ -134,10 +142,12 @@
                     <img src="img/image4.jpg" width="135" height="90" alt="Desert quail inn" />
                     <div class="results-hotel">
                         <a class="selection-title" href="#">Desert quail inn</a>
-                        <p class="selection-item">Мотель</p>
-                        <p class="selection-item">от 3000 р</p>
-                        <button type="button" class="selection-more button">Подробнее</button>
-                        <button type="button" class="selection-reservation button">Забронировать</button>
+                        <div class="search-hotel">
+                            <p class="selection-item">Мотель</p>
+                            <p class="selection-item">от 3000 р</p>
+                            <button type="button" class="selection-more button">Подробнее</button>
+                            <button type="button" class="selection-reservation button">Забронировать</button>
+                        </div>
                     </div>
                     <div class="star-rating">
                         <p><img src="img/star.svg" width="18" height="17" alt="Звёздочка" />
@@ -151,11 +161,14 @@
                     <img src="img/image5.jpg" width="135" height="90" alt="Villas at poco diablo" />
                     <div class="results-hotel">
                         <a class="selection-title" href="#">Villas at poco diablo</a>
-                        <p class="selection-item">Апартаменты</p>
-                        <p class="selection-item">от 2000 р</p>
-                        <button type="button" class="selection-more button">Подробнее</button>
-                        <button type="button" class="selection-reservation button">Забронировать</button>
+                        <div class="search-hotel">
+                            <p class="selection-item">Апартаменты</p>
+                            <p class="selection-item">от 2000 р</p>
+                            <button type="button" class="selection-more button">Подробнее</button>
+                            <button type="button" class="selection-reservation button">Забронировать</button>
+                        </div>
                     </div>
+
                     <div class="star-rating">
                         <p><img src="img/star.svg" width="18" height="17" alt="Звёздочка" />
                             <img src="img/star.svg" width="18" height="17" alt="Звёздочка" />
