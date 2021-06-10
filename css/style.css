@@ -70,23 +70,19 @@ a {
     margin: 0 auto;
 }
 
+.site-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    width: 1200px;
+}
+
 .main-header-logo {
     width: 138px;
     height: 70px;
     position: absolute;
     top: 0;
-    left: 531px;
-    /*?*/
-    justify-self: center;
-    /* не работает*/
-}
-
-.site-navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 0;
-    width: 1200px;
-    height: 70px;
+    align-self: center;
 }
 
 .site-navigation li {
@@ -488,13 +484,6 @@ a {
 .results {
     list-style-type: none;
     padding: 0;
-}
-
-.results-hotel {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    height: 90px;
 }
 
 .check-input {
