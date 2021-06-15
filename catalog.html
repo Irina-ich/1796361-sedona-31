@@ -28,7 +28,7 @@
 
         </nav>
     </header>
-    <main class="container">
+    <main class="container-main-catalog">
         <section class="container-сatalog">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <form class="filter-services" method="get" action="https://echo.htmlacademy.ru">
@@ -90,12 +90,25 @@
                         <input class="input-price-min" type="text" value="ОТ 0" />
                         <input class="input-price-max" type="text" value="ДО 30000" />
                     </div>
-                    <div class="range-controls"></div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0"><svg width="19" height="21" viewbox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.3" d="M9.5 19.0909C4.25315 19.0909 0 14.8165 0 9.54546V11.4545C0 16.7255 4.25315 21 9.5 21C14.7459 21 19 16.7255 19 11.4545V9.54546C19 14.8165 14.7459 19.0909 9.5 19.0909Z" fill="#ABABAB"/>
+                          <path d="M9.5 19.0909C14.7467 19.0909 19 14.8173 19 9.54545C19 4.27365 14.7467 0 9.5 0C4.25329 0 0 4.27365 0 9.54545C0 14.8173 4.25329 19.0909 9.5 19.0909Z" fill="white"/>
+                          <path d="M9.49998 11.4545C10.5493 11.4545 11.4 10.5998 11.4 9.54546C11.4 8.4911 10.5493 7.63637 9.49998 7.63637C8.45063 7.63637 7.59998 8.4911 7.59998 9.54546C7.59998 10.5998 8.45063 11.4545 9.49998 11.4545Z" fill="#ABABAB"/>
+                          </svg>
+                        </div>
+                        <div class="toggle toggle-max" tabindex="0"><svg width="19" height="21" viewbox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.3" d="M9.5 19.0909C4.25315 19.0909 0 14.8165 0 9.54546V11.4545C0 16.7255 4.25315 21 9.5 21C14.7459 21 19 16.7255 19 11.4545V9.54546C19 14.8165 14.7459 19.0909 9.5 19.0909Z" fill="#ABABAB"/>
+                          <path d="M9.5 19.0909C14.7467 19.0909 19 14.8173 19 9.54545C19 4.27365 14.7467 0 9.5 0C4.25329 0 0 4.27365 0 9.54545C0 14.8173 4.25329 19.0909 9.5 19.0909Z" fill="white"/>
+                          <path d="M9.49998 11.4545C10.5493 11.4545 11.4 10.5998 11.4 9.54546C11.4 8.4911 10.5493 7.63637 9.49998 7.63637C8.45063 7.63637 7.59998 8.4911 7.59998 9.54546C7.59998 10.5998 8.45063 11.4545 9.49998 11.4545Z" fill="#ABABAB"/>
+                          </svg>
+                        </div>
+                    </div>
                     <button class="show-btn" type="submit">Показать</button>
                 </div>
-
-
-
             </form>
         </section>
         <section class="search">
@@ -106,17 +119,19 @@
                     <li><a class="options-price">по цене</a></li>
                     <li><a class="options-type" href="#">по типу</a></li>
                     <li><a class="options-rating" href="#">по рейтингу</a></li>
-                </ul>
+                    <li class="icon-dir">
 
-                <a href="#"><svg class="icon-up-dir" width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#"><svg class="icon-up-dir" width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" />
               </svg>
             </a>
-                <a href="#">
-                    <svg class="icon-down-dir " width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#">
+                            <svg class="icon-down-dir " width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" />
               </svg>
-                </a>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <ul class="results">
                 <li>
@@ -126,8 +141,10 @@
                         <div class="search-hotel">
                             <p class="selection-item">Гостиница</p>
                             <p class="selection-item">от 4000 р</p>
-                            <button type="button" class="selection-more">Подробнее</button>
-                            <button type="button" class="selection-reservation">Забронировать</button>
+                            <div class="selection-button">
+                                <button type="button" class="selection-more">Подробнее</button>
+                                <button type="button" class="selection-reservation">Забронировать</button>
+                            </div>
                         </div>
                     </div>
                     <div class="star-rating">
@@ -146,8 +163,11 @@
                         <div class="search-hotel">
                             <p class="selection-item">Мотель</p>
                             <p class="selection-item">от 3000 р</p>
-                            <button type="button" class="selection-more button">Подробнее</button>
-                            <button type="button" class="selection-reservation button">Забронировать</button>
+                            <div class="selection-button">
+                                <button type="button" class="selection-more button">Подробнее</button>
+                                <button type="button" class="selection-reservation button">Забронировать</button>
+
+                            </div>
                         </div>
                     </div>
                     <div class="star-rating">
@@ -165,8 +185,10 @@
                         <div class="search-hotel">
                             <p class="selection-item">Апартаменты</p>
                             <p class="selection-item">от 2000 р</p>
-                            <button type="button" class="selection-more button">Подробнее</button>
-                            <button type="button" class="selection-reservation button">Забронировать</button>
+                            <div class="selection-button">
+                                <button type="button" class="selection-more button">Подробнее</button>
+                                <button type="button" class="selection-reservation button">Забронировать</button>
+                            </div>
                         </div>
                     </div>
 
@@ -179,21 +201,18 @@
                 </li>
             </ul>
         </section>
-        <section class="map">
-            <h2 class="visually-hidden">Как нас найти</h2>
-            <img src="img/map.png " width="1199" height="594" alt="карта" />
-        </section>
+
     </main>
     <footer class="main-footer ">
-        <div class="container">
+        <div class="container-footer">
             <section class="footer-contacts">
                 <p> <a class="insta" href="#">#visitsedona</a><br>
                     <a class="footer-phone" href="tel:+78005558628 ">+7 800 555-86-28</a>
                 </p>
             </section>
-            <ul class="footer-social ">
-                <li class="twitter ">
-                    <a class="social-button" href="# ">
+            <ul class="footer-social">
+                <li class="twitter">
+                    <a class="social-button" href="#">
                         <svg class="twitter-ic " width="17 " height="16 " viewbox="0 0 17 16 " fill="none " xmlns="http://www.w3.org/2000/svg">
     <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009
 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121
@@ -202,15 +221,15 @@
   </svg></a>
                 </li>
                 <li class="fb ">
-                    <a class="social-button " href="# "></a>
-                    <svg class="fb " width="12 " height="22 " viewbox="0 0 12 22 " fill="none " xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z " fill="white "/>  </svg>
+                    <a class="social-button " href="#">
+                        <svg class="fb-ic" width="12" height="22" viewbox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z " fill="white "/></svg></a>
                 </li>
                 <li class="yotube ">
-                    <a class="social-button " href="# "></a>
-                    <svg width="20 " height="16 " viewbox="0 0 20 16 " fill="none " xmlns="http://www.w3.org/2000/svg">
+                    <a class="social-button" href="#">
+                        <svg class="yotube-ic" width="20 " height="16" viewbox="0 0 20 16" fill="none " xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd " clip-rule="evenodd " d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z " fill="white "/>
-    </svg>
+    </svg></a>
                 </li>
             </ul>
             <p class="footer-copyright">
