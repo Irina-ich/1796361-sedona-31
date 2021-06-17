@@ -119,7 +119,7 @@ a.main-header-logo {
 
 .main-header-logo img {
     display: block;
-    padding-left: 55px;
+    margin: 0 auto;
 }
 
 .site-navigation a:not(.main-header-logo) {
@@ -149,15 +149,17 @@ a.main-header-logo {
 }
 
 .background {
-    max-width: 1200px;
-    height: 509px;
     margin-bottom: 42px;
-    background-image: url(../img/background-photo.jpg), url(../img/background-end.svg);
+    background-image: url(../img/background-end.svg), url(../img/background-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .welcome {
-    padding-left: 371px;
+    display: block;
+    margin: 0 auto;
     padding-top: 77px;
+    padding-bottom: 80px;
 }
 
 .background-end {
@@ -268,15 +270,17 @@ a.main-header-logo {
 }
 
 .offer {
+    display: flex;
+    justify-content: center;
     font-size: 21px;
     line-height: 26px;
     background: var(--basic-brown);
     color: var(--basic-white);
     text-align: center;
     padding: 30px 124px 30px 125px;
-    display: inline-block;
     margin-left: 316px;
     margin-right: 316px;
+    margin-top: 50px;
 }
 
 .offer:hover {
@@ -291,6 +295,8 @@ a.main-header-logo {
 .appointment-list {
     list-style: none;
     background: var(--basic-white);
+    padding: 0px;
+    margin: 0px;
 }
 
 .appointment-item {
@@ -298,9 +304,36 @@ a.main-header-logo {
     line-height: 26px;
 }
 
+.appointment-item>label {
+    padding-right: 24px;
+}
+
+.appointment-item.arrival,
+.appointment-item.departure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.appointment-item.arrival {
+    padding-top: 25px;
+}
+
+.appointment-item.departure {
+    padding-top: 29px;
+}
+
+.appointment-item.people {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
 .form-input {
     display: block;
-    width: 346px;
+    width: 338px;
     height: 38px;
     background-color: var(--basic-extra-grey);
     background-image: url(../img/calendar.svg);
@@ -359,15 +392,21 @@ a.main-header-logo {
     text-align: center;
 }
 
+.input-number {
+    width: 36px;
+}
+
 .button-number {
     color: var(--special-grey-number)
 }
 
 .buttons {
     display: flex;
+    justify-content: center;
     width: 114px;
     height: 38px;
     background-color: var(--basic-extra-grey);
+    margin-right: 53px;
 }
 
 .button-find {
@@ -604,9 +643,12 @@ section.footer-contacts {
 .show-btn {
     font-weight: 400;
     background-color: transparent;
-    border: 2px solid var(--basic-white);
     color: var(--basic-white);
     text-align: center;
+}
+
+.show-btn {
+    border: 2px solid var(--basic-white);
 }
 
 .input-price-min,
@@ -615,10 +657,24 @@ section.footer-contacts {
 }
 
 .input-price-holder {
+    width: 317px;
     height: 36px;
     display: flex;
-    padding-right: 73px;
-    padding-top: 10px;
+    margin-right: 73px;
+    margin-top: 10px;
+    border: 2px solid var(--basic-white);
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-price-holder::after {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 2px;
+    background: var(--basic-white);
+    top: 7px;
+    left: 158px;
 }
 
 .range-controls {
