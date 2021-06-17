@@ -353,6 +353,19 @@ a.main-header-logo {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    fill: var(--special-grey-number)
+}
+
+.plus-minus {
+    fill: var(--special-grey-number);
+}
+
+.plus-minus:hover {
+    fill: var(--basic-black);
+}
+
+.plus-minus:active {
+    fill: var(--basic-blue);
 }
 
 .calendar:hover {
@@ -436,6 +449,7 @@ a.main-header-logo {
 
 .button-find:active {
     background: var(--special-blue-active);
+    color: var(--special-white);
 }
 
 .modal {
@@ -630,7 +644,11 @@ section.footer-contacts {
     margin-bottom: 25px;
 }
 
-.infrastructure {
+.check-input:checked+label .chek-list {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.chek-list {
     left: 0;
     width: 27px;
     height: 23px;
@@ -638,10 +656,6 @@ section.footer-contacts {
     background-repeat: no-repeat;
     background-position: center left;
     position: absolute;
-}
-
-.check-input:checked+label .infrastructure {
-    background-image: url(../img/checkbox-on.svg);
 }
 
 .services {
