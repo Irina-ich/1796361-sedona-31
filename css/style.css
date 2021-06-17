@@ -341,20 +341,26 @@ a.main-header-logo {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
+}
+
+.arrival-form {
     position: relative;
 }
 
 .calendar {
-    position: relative;
-    right: 27px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .calendar:hover {
-    background-color: var(--basic-black);
+    fill: var(--basic-black);
 }
 
 .calendar:active {
-    background-color: var(--basic-blue);
+    fill: var(--basic-blue);
 }
 
 .form-input:hover {
