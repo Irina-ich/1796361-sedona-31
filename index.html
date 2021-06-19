@@ -17,7 +17,7 @@
                 <ul class="site-navigation">
                     <li><a href="#">информация</a></li>
                     <li><a href="#">фото и видео</a></li>
-                    <li>
+                    <li class="logo">
                         <a class="main-header-logo"> <img src="img/logo.svg" width="138" height="70" alt="логотип Седона" />
                         </a>
                     </li>
@@ -143,27 +143,37 @@
                         </div>
                     </li>
                     <li class="appointment-item people">
-                        <label for="adults ">Взрослые:</label>
-                        <div class="buttons ">
-                            <button class="button-number " type="button-number ">
-                              <svg class="plus-minus" width="12 " height="3 " viewbox="0 0 12 3 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                   <rect width="12 " height="3 " />
-                              </svg>
-                            </button>
-                            <input class="input-number " id="adults " type="number " name="adults " value="2 " min="1 " max="10 " step="1 " required />
-                            <button class="button-number " type="button "><svg class="plus-minus" width="11 " height="11 " viewbox="0 0 11 11 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                      <path fill-rule="evenodd " clip-rule="evenodd " d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z "/>
-                      </svg></button>
+                        <div class="people-box">
+                            <label class="adults" for="adults ">Взрослые:</label>
+                            <div class="buttons ">
+                                <button class="button-number " type="button-number ">
+                            <svg class="plus-minus" width="12 " height="3 " viewbox="0 0 12 3 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                              <rect width="12 " height="3"/>
+                            </svg>
+                          </button>
+                                <input class="input-number " id="adults " type="number " name="adults " value="2 " min="1 " max="10 " step="1 " required />
+                                <button class="button-number " type="button ">
+                            <svg class="plus-minus" width="11 " height="11 " viewbox="0 0 11 11 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path fill-rule="evenodd " clip-rule="evenodd " d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z "/>
+                            </svg>
+                          </button>
+                            </div>
                         </div>
-                        <label for="children ">Дети:</label>
-                        <div class="buttons">
-                            <button class="button-number " type="button "><svg class="plus-minus" width="12 " height="3 " viewbox="0 0 12 3 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                      <rect width="12 " height="3 " />
-                      </svg></button>
-                            <input class="input-number " id="children " type="number " name="children " value="0 " min="0 " max="10 " step="1 " required />
-                            <button class="button-number " type="button "><svg class="plus-minus" width="11 " height="11 " viewbox="0 0 11 11 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <div class="people-box">
+                            <label class="children" for="children">Дети:</label>
+                            <div class="buttons">
+                                <button class="button-number " type="button ">
+                            <svg class="plus-minus" width="12 " height="3 " viewbox="0 0 12 3 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                              <rect width="12 " height="3 " />
+                            </svg>
+                             </button>
+                                <input class="input-number " id="children " type="number " name="children " value="0 " min="0 " max="10 " step="1 " required />
+                                <button class="button-number " type="button ">
+                                  <svg class="plus-minus" width="11 " height="11 " viewbox="0 0 11 11 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                       <path fill-rule="evenodd " clip-rule="evenodd " d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z " />
-                      </svg></button>
+                      </svg>
+                    </button>
+                            </div>
                         </div>
                     </li>
                 </ul>
