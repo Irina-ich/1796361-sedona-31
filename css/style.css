@@ -25,6 +25,7 @@
     --special-shadow: rgba(0, 0, 0, 0.25);
     --modal-shadow: rgba(0, 1, 1, 0.15);
     --page-shadow: rgba(0, 1, 1, 0.2);
+    --special-footer: rgba(255, 255, 255, 0.9);
 }
 
 @font-face {
@@ -105,6 +106,7 @@ img {
 .site-navigation li {
     text-align: center;
     order: 4;
+    padding-top: 2px;
 }
 
 .site-navigation li:nth-child(1) {
@@ -113,10 +115,19 @@ img {
 
 .site-navigation li:nth-child(2) {
     order: 2;
+    padding-right: 21px;
 }
 
 .site-navigation li:nth-child(3) {
     order: 3;
+}
+
+.site-navigation li:nth-child(4) {
+    padding-left: 38px;
+}
+
+.site-navigation li:nth-child(5) {
+    padding-left: 18px;
 }
 
 .site-navigation,
@@ -262,6 +273,7 @@ a.main-header-logo {
 .feature-item-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 256px;
 }
 
 .feature-item-text {
@@ -272,7 +284,7 @@ a.main-header-logo {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    margin: 19px 140px 25px;
+    margin: 17px 140px 25px;
     padding-top: 29px;
 }
 
@@ -295,7 +307,7 @@ a.main-header-logo {
 
 .appointment {
     background-color: var(--basic-white);
-    padding-top: 58px;
+    padding-top: 17px;
 }
 
 .appointment-title {
@@ -530,21 +542,25 @@ a.main-header-logo {
 
 .map img {
     display: block;
-    width: 100%;
-    height: 473px;
+    width: 1200px;
 }
 
 
 /*footer*/
 
+.main-footer.index {
+    margin-top: -120px;
+    box-shadow: 0px 4px 4px var(--special-shadow);
+}
+
 .main-footer {
-    margin-top: 30px;
+    background-color: var(--special-footer);
 }
 
 .container-footer {
-    padding-left: 136px;
-    padding-right: 131px;
-    padding-bottom: 36px;
+    padding-left: 137px;
+    padding-right: 130px;
+    padding-top: 41px;
 }
 
 .main-footer .container-footer {
@@ -928,7 +944,7 @@ section.footer-contacts {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5px 73px;
+    padding: 3px 73px;
     border-bottom: 1px solid var(--special-grey-border);
 }
 
