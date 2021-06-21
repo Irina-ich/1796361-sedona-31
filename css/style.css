@@ -284,7 +284,12 @@ a.main-header-logo {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    margin: 17px 140px 25px;
+    margin: 18px 140px 25px;
+    padding-top: 35px;
+}
+
+.feature-subtitle.blue-one,
+.feature-subtitle.blue {
     padding-top: 29px;
 }
 
@@ -293,12 +298,11 @@ a.main-header-logo {
 }
 
 .feature-subtitle.blue {
-    padding-top: 10px;
+    margin: 22px 125px 24px;
 }
 
 .feature-caption-blue {
-    padding-right: 17px;
-    padding-top: 2px;
+    padding-left: 71px;
 }
 
 .feature-item-block-two {
@@ -315,7 +319,7 @@ a.main-header-logo {
     line-height: 24px;
     font-weight: 700;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 17px;
     padding-right: 6px;
 }
 
@@ -551,6 +555,12 @@ a.main-header-logo {
 .main-footer.index {
     margin-top: -120px;
     box-shadow: 0px 4px 4px var(--special-shadow);
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.main-footer.catalog {
+    margin-top: 10px;
 }
 
 .main-footer {
@@ -560,7 +570,7 @@ a.main-header-logo {
 .container-footer {
     padding-left: 137px;
     padding-right: 130px;
-    padding-top: 41px;
+    padding-top: 32px;
 }
 
 .main-footer .container-footer {
@@ -635,6 +645,10 @@ section.footer-contacts {
 
 .social-button:active path {
     opacity: 0.3;
+}
+
+.button-copyright {
+    padding-bottom: 5px;
 }
 
 .footer-copyright {
@@ -735,6 +749,7 @@ section.footer-contacts {
 
 .filter-title.price {
     padding-left: 4px;
+    cursor: pointer;
 }
 
 .filter-title.lodging {
