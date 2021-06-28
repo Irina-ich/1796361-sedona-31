@@ -16,7 +16,7 @@ try {
 
 offer.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal.classList.add("modal-show");
+  modal.classList.toggle("modal-show");
 
   if (storage) {
     first.value = storage;
