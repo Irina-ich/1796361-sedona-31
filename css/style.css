@@ -270,8 +270,8 @@ a.main-header-logo {
   padding-top: 9px;
 }
 .feature-caption-blue.left{
-  padding-right: 3px;
-  padding-top: 7px;
+  padding-right: 5px;
+  padding-top: 9px;
 }
 .features-block-two {
     list-style: none;
@@ -308,7 +308,7 @@ a.main-header-logo {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    margin: 18px 140px 25px;
+    margin: 18px 140px 23px;
     padding-top: 29px;
 }
 
@@ -318,13 +318,15 @@ a.main-header-logo {
 }
 
 .feature-subtitle.houses {
-    padding-top: 1px;
+    padding-top: 2px;
 }
 
 .feature-subtitle.blue {
-    margin: 22px 125px 24px;
+    margin: 22px 100px 24px;
 }
-
+.feature-number-grey{
+  padding-top: 2px;
+}
 .feature-item-block-two {
     background-color: var(--basic-super-grey);
 }
@@ -366,7 +368,7 @@ input[type="number"]:focus {
     padding: 29px 123px 32px 126px;
     margin-left: 316px;
     margin-right: 316px;
-    margin-top: 43px;
+    margin-top: 44px;
 }
 
 .offer:hover {
