@@ -933,7 +933,6 @@ padding-left: 7px;
 .ratio {
     display: inline-block;
     background: var(--basic-extra-grey);
-    text-align: center;
     color: var(--special-brown);
     margin-bottom: 17px;
     padding: 3px 12px 3px 15px;
