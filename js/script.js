@@ -5,25 +5,11 @@ const appointmentForm = modal.querySelector(".appointment-form");
 const first = modal.querySelector(".first");
 const second = modal.querySelector(".second");
 
-let isStorageSupport = true;
-let storage = "";
-
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
 
 offer.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.toggle("modal-show");
 
-  if (storage) {
-    first.value = storage;
-    second.focus();
-  } else {
-    first.focus();
-  }
 });
 
 offerClose.addEventListener("click", function (evt) {
